@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-coursera-week3-task.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-coursera-week3-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Nice String/Task/kotlin-coursera-week3-task.Nice_String-Task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Taxi Park/Task/kotlin-coursera-week3-task.Taxi_Park-Task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week3-task.util.test.iml" />
+    </modules>
+  </component>
+</project>
