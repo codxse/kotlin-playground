@@ -24,12 +24,14 @@ fun TaxiPark.findFaithfulPassengers(minTrips: Int): Set<Passenger> =
  * Task #3. Find all the passengers, who were taken by a given driver more than once.
  */
 fun TaxiPark.findFrequentPassengers(driver: Driver): Set<Passenger> =
-        this.trips.flatMap {
-            trip -> trip.passengers.map { Pair(it, trip.driver) }
-        }
-                .groupBy { it }
-                .filter { (_, vs) -> vs.size > 1 }
-                .map { (k, _) -> k.first }
+        this.allPassengers
+                .filter { p: Passenger ->
+                    this.trips
+                            .filter { trip: Trip -> p in trip.passengers }
+                            .filter { it.driver == driver }
+                            .count() > 1
+
+                }
                 .toSet()
 
 
@@ -39,14 +41,34 @@ fun TaxiPark.findFrequentPassengers(driver: Driver): Set<Passenger> =
  * Task #4. Find the passengers who had a discount for majority of their trips.
  */
 fun TaxiPark.findSmartPassengers(): Set<Passenger> =
-        TODO()
+        this.allPassengers
+                .filter { ps ->
+                    val passengers = this.trips.filter { trip -> ps in trip.passengers }
+                    val ps1 = passengers.filter { it.discount != null }
+                    val ps2 = passengers.filter { it.discount == null }
+                    ps1.count() > ps2.count()
+                }
+                .toSet()
 
 /*
  * Task #5. Find the most frequent trip duration among minute periods 0..9, 10..19, 20..29, and so on.
  * Return any period if many are the most frequent, return `null` if there're no trips.
  */
 fun TaxiPark.findTheMostFrequentTripDurationPeriod(): IntRange? {
-    return TODO()
+    return if (this.trips.isEmpty()) {
+        return null
+    } else {
+        val maxDuration = this.trips.map{ it.duration } .maxOrNull() ?: 0;
+        val rgs = (0..maxDuration).chunked(10).map {
+            if (it.count() == 10) it else it.first()..it.first()+9
+        }
+        val _tripInRange = rgs.map trip@{ rg ->
+            val n = this.trips.filter { it.duration in rg } .count()
+            return@trip Pair(n, rg.first()..rg.last())
+        }
+        val (_, value) = _tripInRange.sortedBy { it.first }.last()
+        value
+    }
 }
 
 /*
