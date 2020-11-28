@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-coursera-week4-task.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-coursera-week4-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Board/Task/kotlin-coursera-week4-task.Board-Task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Rationals/Task/kotlin-coursera-week4-task.Rationals-Task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/kotlin-coursera-week4-task.util.test.iml" />
+    </modules>
+  </component>
+</project>
