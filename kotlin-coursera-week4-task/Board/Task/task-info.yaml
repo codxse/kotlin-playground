@@ -52,17 +52,17 @@ files:
     length: 0
     placeholder_text: TODO()
     initial_state:
-      length: 6
-      offset: 90
+      length: 0
+      offset: 1382
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 2627
+  - offset: 2514
     length: 14
     placeholder_text: TODO()
     initial_state:
-      length: 6
-      offset: 149
+      length: 14
+      offset: 2627
     initialized_from_dependency: false
     selected: true
     status: Unchecked
@@ -445,5 +445,5 @@ status: Unchecked
 feedback:
   message: <html>Submission successful, please <a href="https://www.coursera.org/learn/kotlin-for-java-developers/programming/7fkLn/board/submission">check
     the status on Coursera</a></html>
-  time: Sat, 05 Dec 2020 10:41:37 UTC
+  time: Sat, 05 Dec 2020 11:44:04 UTC
 record: -1

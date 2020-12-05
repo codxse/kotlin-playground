@@ -51,42 +51,36 @@ fun createSquareBoard(width: Int): SquareBoard = SBoard(width)
 data class Pos<T>(val cell: Cell, var value: T? = null)
 
 class GBoard<T>(width: Int) : SBoard(width), GameBoard<T> {
-    private val cellValues: List<Pos<T>>
+    private val cellValues = mutableMapOf<Cell, T?>()
 
     init {
-        cellValues = (1..width).flatMap { i ->
-            (1..width).map { j -> Pos(super.getCell(i, j))}
+        (1..width).flatMap { i ->
+            (1..width).map { j -> cellValues[super.getCell(i, j)] = null }
         }
     }
 
-    override fun get(cell: Cell): T? {
-        val pos: Pos<T>? = cellValues.find { cell == it.cell }
-        if (pos != null) {
-            return pos.value
-        }
-        return null
-    }
+    override fun get(cell: Cell): T? = cellValues[cell]
 
     override fun set(cell: Cell, value: T?) {
-        cellValues.map {
-            if (cell == it.cell) {
-                it.value = value
-            }
-        }
+        cellValues[cell] = value
     }
 
     override fun filter(predicate: (T?) -> Boolean): Collection<Cell> = cellValues
-            .filter { predicate.invoke(it.value) }
-            .map { it.cell }
+            .toList()
+            .filter { predicate.invoke(it.second) }
+            .map { it.first }
 
     override fun find(predicate: (T?) -> Boolean): Cell? = cellValues
-            .find { predicate.invoke(it.value) } ?.cell
+            .toList()
+            .find { predicate.invoke(it.second) } ?.first
 
     override fun any(predicate: (T?) -> Boolean): Boolean = cellValues
-            .any { predicate.invoke(it.value) }
+            .toList()
+            .any { predicate.invoke(it.second) }
 
     override fun all(predicate: (T?) -> Boolean): Boolean = cellValues
-            .all { predicate.invoke(it.value) }
+            .toList()
+            .all { predicate.invoke(it.second) }
 }
 
 fun <T> createGameBoard(width: Int): GameBoard<T> = GBoard(width)
