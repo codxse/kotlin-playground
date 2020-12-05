@@ -176,7 +176,7 @@ class TestSquareBoard {
     fun test19TheSameCell() {
         val board = createSquareBoard(4)
         val cell = board.getCell(1, 1)
-        val first = board.run { cell.getNeighbour(RIGHT) }
+        val first = board.run { cell.getNeighbour( RIGHT) }
         val second = board.getCell(1, 2)
         Assert.assertTrue("'getNeighbour' shouldn't recreate the 'Cell' instance.\n" +
                 "Create only 'width * width' cells; all the functions working with cells " +
